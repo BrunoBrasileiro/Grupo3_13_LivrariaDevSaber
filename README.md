@@ -45,3 +45,20 @@ Nosso objetivo foi construir um **pipeline de dados no BigQuery** para organizar
 - O projeto foi desenvolvido em **Google BigQuery**.  
 - Os scripts foram organizados para permitir execução em ordem (CREATE → INSERT → ANALYSIS).  
 - A VIEW criada facilita consultas futuras e garante consistência nos relatórios.  
+
+---
+
+## :thinking: Perguntas respondidas pelo projeto
+- Quais são os clientes mais assíduos?  
+- Quais gêneros literários tiveram maior destaque?  
+- Qual é o desempenho das vendas por estado (ex.: SP, RJ)?  
+- Qual foi o produto mais vendido?  
+- Qual o valor total das vendas em determinado período?  
+
+---
+
+## :hammer_and_wrench: Boas práticas aplicadas
+- Separação de clientes, produtos e vendas em tabelas próprias para evitar redundância.  
+- Uso de **chaves (IDs)** para permitir integrações entre tabelas.  
+- Criação de **VIEWs** para facilitar consultas futuras sem reescrever SQL.  
+- Organização dos scripts em ordem de execução: `CREATE → INSERT → ANALYSIS`.  
